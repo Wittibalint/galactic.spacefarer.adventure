@@ -30,8 +30,8 @@
         "auth": {
           "kind": "mocked",
           "users": {
-            "incident.support@tester.sap.com": {
-              "password": "initial",
+            "admin": {
+              "password": "admin",
               "roles": [
                 "admin"
               ]
