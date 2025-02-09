@@ -1,4 +1,6 @@
 
 using from './spacefarer/annotations';
 
-using from './project1/annotations';
+using from './admin/annotations';
+
+using from './spacefareradmin/annotations';

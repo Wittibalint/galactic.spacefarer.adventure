@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "ns2.project1",
+    "id": "admin.admin",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.16.3",
-      "toolsId": "78438154-81e1-4caa-b049-9d84e551b10c"
+      "toolsId": "9a0aebfe-7a60-42a5-9338-cd21ff4eabc8"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/processor/",
+        "uri": "/odata/v4/admin/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "ns2.project1.i18n.i18n"
+          "bundleName": "admin.admin.i18n.i18n"
         }
       },
       "": {
@@ -85,28 +85,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "UserList",
-          "target": "UserList"
+          "name": "IntergalacticDepartmentList",
+          "target": "IntergalacticDepartmentList"
         },
         {
-          "pattern": "User({key}):?query:",
-          "name": "UserObjectPage",
-          "target": "UserObjectPage"
+          "pattern": "IntergalacticDepartment({key}):?query:",
+          "name": "IntergalacticDepartmentObjectPage",
+          "target": "IntergalacticDepartmentObjectPage"
         }
       ],
       "targets": {
-        "UserList": {
+        "IntergalacticDepartmentList": {
           "type": "Component",
-          "id": "UserList",
+          "id": "IntergalacticDepartmentList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/User",
+              "contextPath": "/IntergalacticDepartment",
               "variantManagement": "Page",
               "navigation": {
-                "User": {
+                "IntergalacticDepartment": {
                   "detail": {
-                    "route": "UserObjectPage"
+                    "route": "IntergalacticDepartmentObjectPage"
                   }
                 }
               },
@@ -120,14 +120,14 @@
             }
           }
         },
-        "UserObjectPage": {
+        "IntergalacticDepartmentObjectPage": {
           "type": "Component",
-          "id": "UserObjectPage",
+          "id": "IntergalacticDepartmentObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/User"
+              "contextPath": "/IntergalacticDepartment"
             }
           }
         }

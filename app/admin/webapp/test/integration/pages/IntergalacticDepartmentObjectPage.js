@@ -8,9 +8,9 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
 
     return new ObjectPage(
         {
-            appId: 'ns2.project1',
-            componentId: 'UserObjectPage',
-            contextPath: '/User'
+            appId: 'admin.admin',
+            componentId: 'IntergalacticDepartmentObjectPage',
+            contextPath: '/IntergalacticDepartment'
         },
         CustomPageDefinitions
     );

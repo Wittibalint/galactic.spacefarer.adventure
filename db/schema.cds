@@ -1,7 +1,7 @@
-using { cuid, sap.common.CodeList } from '@sap/cds/common';
+using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 namespace sap.capire.Spacefarer; 
 
-entity GalacticSpacefarer : cuid {  
+entity GalacticSpacefarer : cuid, managed {  
     key ID : String;
     stardustCollection  : String;
     WormholeNavigationSkill : String;
@@ -17,7 +17,7 @@ entity User : cuid {
     }
 entity IntergalacticDepartment : cuid {
     spacefarers : Association to many GalacticSpacefarer on spacefarers.department = $self;
-    name : String;
+    key name : String;
 }
 
 entity NavigationSkill : CodeList {
