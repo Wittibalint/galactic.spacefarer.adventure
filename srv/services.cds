@@ -6,6 +6,7 @@ using { sap.capire.Spacefarer as my } from '../db/schema';
 service ProcessorService { 
     @readonly
     entity GalacticSpacefarer as projection on my.GalacticSpacefarer;
+    entity IntergalacticDepartment as projection on my.IntergalacticDepartment;
 
 }
 annotate ProcessorService with @(requires: 'support');
