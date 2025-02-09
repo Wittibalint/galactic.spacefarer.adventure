@@ -8,6 +8,7 @@ default-*.json
 gen/
 node_modules/
 target/
+srv/email.json
 
 # Web IDE, App Studio
 .che/
