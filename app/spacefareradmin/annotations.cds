@@ -46,13 +46,13 @@ annotate service.GalacticSpacefarer with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ID',
-            Value : ID,
+            Value : name,
+            Label : 'name',
         },
         {
             $Type : 'UI.DataField',
-            Label : 'stardustCollection',
-            Value : stardustCollection,
+            Label : 'department_name',
+            Value : department_name,
         },
         {
             $Type : 'UI.DataField',
@@ -66,8 +66,15 @@ annotate service.GalacticSpacefarer with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'department_name',
-            Value : department_name,
+            Label : 'ID',
+            Value : ID,
+            ![@UI.Hidden],
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : department_ID,
+            Label : 'department_ID',
+            ![@UI.Hidden],
         },
     ],
 );
