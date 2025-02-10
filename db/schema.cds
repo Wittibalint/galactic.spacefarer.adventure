@@ -2,19 +2,15 @@ using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 namespace sap.capire.Spacefarer; 
 
 entity GalacticSpacefarer : cuid, managed {  
-    key ID : String;
+    key name : String;
     stardustCollection  : String;
+    spacesuitColor : String;
     WormholeNavigationSkill : String;
     originalPlanet : String;
     department : Association to IntergalacticDepartment;
     positions : String;
 }
-entity User : cuid {
-    key userName : String;
-    //I would NEVER stored it as a plaint text only now for debugging purpose
-    password : String;
-    spacefarer : Association to GalacticSpacefarer;
-    }
+
 entity IntergalacticDepartment : cuid {
     spacefarers : Association to many GalacticSpacefarer on spacefarers.department = $self;
     key name : String;
