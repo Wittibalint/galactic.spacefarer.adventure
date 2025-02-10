@@ -7,6 +7,12 @@ annotate service.GalacticSpacefarer with @(
                 $Type : 'UI.DataField',
                 Label : 'ID',
                 Value : ID,
+                ![@UI.Hidden],
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : name,
+                Label : 'name',
             },
             {
                 $Type : 'UI.DataField',
@@ -28,6 +34,16 @@ annotate service.GalacticSpacefarer with @(
                 Label : 'positions',
                 Value : positions,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : spacesuitColor,
+                Label : 'spacesuitColor',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : department_name,
+                Label : 'department_name',
+            },
         ],
     },
     UI.Facets : [
@@ -43,16 +59,12 @@ annotate service.GalacticSpacefarer with @(
             $Type : 'UI.DataField',
             Label : 'ID',
             Value : ID,
+            ![@UI.Hidden],
         },
         {
             $Type : 'UI.DataField',
-            Label : 'stardustCollection',
-            Value : stardustCollection,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'WormholeNavigationSkill',
-            Value : WormholeNavigationSkill,
+            Value : name,
+            Label : 'name',
         },
         {
             $Type : 'UI.DataField',
@@ -64,7 +76,20 @@ annotate service.GalacticSpacefarer with @(
             Label : 'positions',
             Value : positions,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : department_name,
+            Label : 'department_name',
+        },
     ],
+    UI.HeaderInfo : {
+        Title : {
+            $Type : 'UI.DataField',
+            Value : name,
+        },
+        TypeName : '',
+        TypeNamePlural : '',
+    },
 );
 
 annotate service.GalacticSpacefarer with {
