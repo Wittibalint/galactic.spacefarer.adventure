@@ -14,6 +14,7 @@ entity GalacticSpacefarer : cuid, managed {
 entity IntergalacticDepartment : cuid {
     spacefarers : Association to many GalacticSpacefarer on spacefarers.department = $self;
     key name : String;
+    alliance: String;
 }
 
 entity NavigationSkill : CodeList {

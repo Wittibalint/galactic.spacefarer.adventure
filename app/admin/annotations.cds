@@ -8,6 +8,11 @@ annotate service.IntergalacticDepartment with @(
                 Label : 'name',
                 Value : name,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : alliance,
+                Label : 'alliance',
+            },
         ],
     },
     UI.Facets : [
@@ -24,6 +29,25 @@ annotate service.IntergalacticDepartment with @(
             Label : 'name',
             Value : name,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : alliance,
+            Label : 'alliance',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : ID,
+            Label : 'ID',
+            ![@UI.Hidden],
+        },
     ],
+    UI.HeaderInfo : {
+        Title : {
+            $Type : 'UI.DataField',
+            Value : name,
+        },
+        TypeName : '',
+        TypeNamePlural : '',
+    },
 );
 
