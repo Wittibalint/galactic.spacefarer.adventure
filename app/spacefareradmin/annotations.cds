@@ -112,6 +112,10 @@ annotate service.GalacticSpacefarer with {
                 $Type : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty : 'name',
             },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'alliance',
+            },
         ],
     }
 };
