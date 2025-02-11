@@ -37,12 +37,7 @@
                 "admin"
               ]
             },
-            "alice": {
-              "roles": [
-                "support"
-              ]
-            },
-            "bob": {
+            "guest": {
               "roles": [
                 "support"
               ]
